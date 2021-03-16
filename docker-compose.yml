@@ -1,0 +1,14 @@
+version: '3.3'
+services:
+  generic-api-html:
+    container_name: generic-api-html
+    build: 
+      context: './'
+      dockerfile: ./docker/api.dockerfile
+    expose:
+      - '3001'
+    ports:
+      - '3001:3001'
+  
+
+
